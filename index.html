@@ -28,11 +28,35 @@
             text-transform: uppercase;
             pointer-events: none;
         }
+        .links {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            font-weight: bold;
+            text-align: right;
+        }
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #00aaff;
+        }
     </style>
 </head>
 <body>
     <div id="scene-container"></div>
-    <div class="text-overlay">droox</div>
+    <div class="text-overlay">Droox</div>
+    <div class="links">
+        <a href="https://www.instagram.com/inihcsedot.png" target="_blank">Instagram</a>
+        <a href="https://x.com/drooxdroox" target="_blank">Twitter</a>
+        <a href="https://www.twitch.tv/drooxdroox" target="_blank">Twitch.tv</a>
+    </div>
 
     <script>
         const container = document.getElementById('scene-container');
